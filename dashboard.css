@@ -1,0 +1,119 @@
+h1 {
+    text-align: center;
+    margin-top: 7%;
+}
+
+body {
+    overflow: hidden; /* Disable scrolling */
+}
+
+.container {
+    display: flex;
+    gap: 30px; /* Reduced gap between frames */
+}
+
+.frame {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 15px; /* Reduced padding */
+    margin-top: 3%;
+    margin-left: 7px;
+    width: 150px; /* Consistent width */
+    height: 60px; /* Consistent height */
+    background: rgb(197, 197, 197);
+    border-bottom: 3px solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.total-products {
+    border-color: #001D6C; /* Dark Blue */
+}
+
+.total-categories {
+    border-color: #D2691E; /* Chocolate */
+}
+
+.overall-quantity {
+    border-color: #228B22; /* Forest Green */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; /* Center vertically */
+    height: 100%;
+}
+
+.header-text {
+    color: gray;
+    font-size: 9px; /* Reduced font size */
+}
+
+.number {
+    margin-top: 5px; /* Adjusted margin for better alignment */
+    font-weight: bold;
+    font-size: 12px; /* Reduced font size */
+}
+
+.status-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Add this line */
+    padding: 10px;
+    margin-left: 130px;
+    background: #D1D0D0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 70px;
+    margin-top: 35px;
+
+}
+
+.squares-and-total {
+    display: flex;
+    align-items: center; /* Center align squares and total */
+    font-size: 12px;
+    gap: 20px;
+
+}
+.usage-square, .total-square {
+    display: flex;
+    flex-direction: row;
+    width: 10px; /* Adjust size as needed */
+    height: 10px; /* Adjust size as needed */
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.label{
+    font-size: 12px;
+}
+.rnumber {
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+}
+
+.low-stock {
+    border-left: 5px solid #D2691E; /* Chocolate color */
+    padding-left: 10px; /* Add padding for space */
+}
+
+.about-to-expire {
+    border-left: 5px solid #FF4500; /* Orange Red color */
+    padding-left: 10px; /* Add padding for space */
+}
+
+.no-stock {
+    border-left: 5px solid #001D6C; /* Dark Blue color */
+    padding-left: 10px; /* Add padding for space */
+}
+
+canvas {
+    width: 60px !important; /* Reduced width */
+    height: 60px !important; /* Reduced height */
+}
